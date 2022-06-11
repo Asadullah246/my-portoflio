@@ -53,7 +53,7 @@ const Skills = () => {
                     return (
                         <div class="card w-40 bg-base-200 ">
                             <figure class="">
-                                <img className='w-20 h-16' src={skill.image} alt="Shoes" class="rounded-xl" />
+                                <img className='w-20 h-16 rounded-xl' src={skill.image} alt="Shoes"  />
                             </figure>
                             <div class="card-body items-center text-center">
                                 <h2 class="card-title font-bold">{skill.name}</h2>

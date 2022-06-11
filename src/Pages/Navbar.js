@@ -23,16 +23,18 @@ const Navbar = () => {
                     <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><NavLink style={actived} to='/contact'>Contact Me</NavLink></li>
                         <li><NavLink style={actived} to='/about'>About Me</NavLink></li>
+                        <li><NavLink style={actived} to='/blogs'>Blogs</NavLink></li>
                         <li><a href={resume} className="bg-primary px-4 py-0 text-white" download>Download Resume</a></li>
                     
                     </ul>
                 </div>
-                <img src="" alt="logo" className='w-[24px] lg:w-[32px] lg:h-auto' />
-                <Link to="/" className="btn btn-ghost normal-case text-xl md:text-2xl lg:text-3xl lg:pl-2">Home</Link>
+                {/* <img src="" alt="" className='w-[24px] lg:w-[32px] lg:h-auto' /> */}
+                <Link to="/" className="btn btn-ghost normal-case text-xl md:text-2xl lg:text-3xl lg:pl-2 lg:ml-[100%]">Home</Link>
             </div>
             <div className="navbar-center lg:ml-[55vw] hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
                     <li><NavLink style={actived} to='/contact'>Contact Me</NavLink></li>
+                    <li><NavLink style={actived} to='/blogs'>Blogs</NavLink></li>
                     <li><NavLink style={actived} to='/about'>About Me</NavLink></li>
                     <li><a href={resume} className="bg-primary px-4 py-0 text-white" download>Download Resume</a></li>
 

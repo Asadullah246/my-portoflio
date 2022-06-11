@@ -14,7 +14,7 @@ const Contact = () => {
         <div className='pt-24'>
 
             <div className='bg-base-200 lg:w-1/2 mx-auto lg:pt-12 lg:pb-8 lg:px-24'>
-                <h1 className='text-3xl font-bold mb-12'>Contact with me</h1>
+                <h1 className='text-3xl font-bold mb-12'>Hire or contact with me</h1>
                 <form onSubmit={contact} className='text-left mx-auto w-full'>
                     <label htmlFor="name">Your name</label><br />
                     <input type="text" placeholder="Type here" name="name" class="input input-bordered input-primary w-full block mb-6" required />
@@ -23,8 +23,8 @@ const Contact = () => {
                     <label htmlFor="name">Message</label><br />
 
                     <textarea name="" id="" cols="30" rows="10" class="input input-bordered input-primary w-full block " required ></textarea>
-                    <p>{error} </p>
-                    <p>{success}</p>
+                    <p className='mt-4 text-red-400'>{error} </p>
+                    <p className='mt-4 text-primary'>{success}</p>
                     <button type='submit' className='btn btn-primary text-lg w-full my-12'>Submit</button>
                 </form>
 
